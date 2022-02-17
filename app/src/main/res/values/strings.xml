@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Trasha</string>
+    <string name="exit">Exit</string>
+    <string name="tests">Tests</string>
+    <string name="dictionaries">Dicts</string>
+    <string name="settings">Sets</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item   android:id="@+id/tests_fragment"
+            android:title="@string/tests"
+            android:icon="@drawable/ic_tests" />
+
+    <item   android:id="@+id/dictionaries_fragment"
+            android:title="@string/dictionaries"
+            android:icon="@drawable/ic_dictionaries" />
+
+    <item   android:id="@+id/settings_fragment"
+            android:title="@string/settings"
+            android:icon="@drawable/ic_settings" />
+</menu>

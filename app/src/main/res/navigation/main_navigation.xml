@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/tests_fragment">
+
+    <fragment
+        android:id="@+id/tests_fragment"
+        android:name="com.example.trasha.tests_fragment"
+        android:label="fragment_tests_fragment"
+        tools:layout="@layout/fragment_tests" />
+    <fragment
+        android:id="@+id/dictionaries_fragment"
+        android:name="com.example.trasha.dictionaries_fragment"
+        android:label="fragment_dictionaries_fragment"
+        tools:layout="@layout/fragment_dictionaries" />
+    <fragment
+        android:id="@+id/settings_fragment"
+        android:name="com.example.trasha.settings_fragment"
+        android:label="fragment_settings_fragment"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
