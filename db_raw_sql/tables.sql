@@ -1,0 +1,54 @@
+CREATE TABLE users(
+	id SERIAL PRIMARY KEY NOT NULL,
+	login VARCHAR NOT NULL UNIQUE,
+	password VARCHAR NOT NULL,
+	salt VARCHAR NOT NULL
+);
+
+CREATE TABLE dictionaries(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR NOT NULL,
+	user_id SERIAL NOT NULL,
+	source VARCHAR NOT NULL,
+	target VARCHAR NOT NULL,
+	FOREIGN KEY(user_id) REFERENCES users(id)
+);
+
+CREATE TABLE translations(
+	id SERIAL PRIMARY KEY NOT NULL,
+	word VARCHAR NOT NULL,
+	translation VARCHAR NOT NULL,
+	dictionary_id SERIAL NOT NULL,
+	FOREIGN KEY(dictionary_id) REFERENCES dictionaries(id)
+);
+
+/* 
+
+CREATE TABLE users(
+	id SERIAL PRIMARY KEY NOT NULL,
+	login VARCHAR NOT NULL UNIQUE,
+	password VARCHAR NOT NULL,
+	salt VARCHAR NOT NULL
+);
+
+CREATE TABLE dictionaries(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR NOT NULL,
+	user_id SERIAL NOT NULL,
+	source VARCHAR NOT NULL,
+	target VARCHAR NOT NULL,
+	FOREIGN KEY(user_id) REFERENCES users(id)
+);
+
+CREATE TABLE translations(
+	id SERIAL PRIMARY KEY NOT NULL,
+	word VARCHAR NOT NULL,
+	translation VARCHAR NOT NULL,
+	dictionary_id SERIAL NOT NULL,
+	FOREIGN KEY(dictionary_id) REFERENCES dictionaries(id)
+);
+
+DROP TABLE users CASCADE;
+DROP TABLE dictionaries CASCADE;
+DROP TABLE translations CASCADE;
+*/

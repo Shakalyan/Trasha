@@ -1,0 +1,6 @@
+[submodule "TrashaFront"]
+	path = TrashaFront
+	url = https://github.com/Shakalyan/TrashaFront
+[submodule "TrashaBack"]
+	path = TrashaBack
+	url = https://github.com/Shakalyan/TrashaBack
